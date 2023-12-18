@@ -106,3 +106,11 @@ label = ["u(t)" "theta" "theta_dot"];
 write = [label;write];
 filename = 'test0.csv';
 writematrix(write, filename);
+
+% make robot test csv
+writeV = V_packet(1,:)';
+filename = 'velocity_test.csv';
+writematrix(writeV, filename);
+ 
+filename = 'acceleration_test.csv';
+writematrix(writeU, filename);
