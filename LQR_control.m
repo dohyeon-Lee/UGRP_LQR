@@ -38,10 +38,10 @@ end
 %% Design LQR controller
 
 % inital condition 
-X_init = [0 0 30*(pi/180) 0]';
+X_init = [0 0 70*(pi/180) 0]';
 % LQR controller parameter
-Q = [0.0005 0;0 0.01];
-R = 0.00001;
+Q = [1 0;0 0.01];
+R = 0.001;
 % solve Ricatti equation
 [P,L,K] = care(A,B,C'*Q*C,R)
 %% simulation
