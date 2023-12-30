@@ -40,7 +40,7 @@ end
 % inital condition 
 X_init = [0 0 30*(pi/180) 0]';
 % LQR controller parameter
-Q = [0.1 0;0 0];
+Q = [0.1 0;0 1];
 R = 0.005;
 % solve Ricatti equation
 [P,L,K] = care(A,B,C'*Q*C,R)
